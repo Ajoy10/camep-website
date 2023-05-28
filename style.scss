@@ -178,3 +178,49 @@ main#first {
     }
 
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#third {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 250px;
+    gap: 46px;
+
+    background-color: #212E39;
+
+
+    #beds-image {
+        flex: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .list {
+        flex: 2;
+    }
+
+    .cards {
+        background-color: #213A53;
+        color: white;
+
+        padding: 35px 30px;
+        border-radius: 4px;
+
+        h3 {
+            color: #1897CE;
+            margin-bottom: 8px;
+
+            font-weight: 500;
+            font-size: 1.4em;
+        }
+
+        p {
+            font-weight: 300;
+        }
+    }
+}
