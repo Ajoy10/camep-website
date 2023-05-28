@@ -244,6 +244,53 @@ main#first #hero-content button#cta:hover {
   font-weight: 300;
 }
 
+#sixth {
+  padding: 40px 14vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sixth .row {
+  justify-content: space-between;
+}
+#sixth .list {
+  gap: 20px;
+}
+#sixth .card {
+  flex: 1;
+  background-color: #EBEEF0;
+  border: 1px solid #DBDBDB;
+  padding: 30px;
+}
+#sixth .card .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#sixth .card .top img {
+  width: 60%;
+  margin-bottom: 24px;
+}
+#sixth .card .top h4 {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+#sixth .card .top p {
+  opacity: 0.8;
+  font-size: 0.85em;
+  line-height: 1.2em;
+  text-align: center;
+}
+#sixth .card .bottom {
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
 h2 {
   font-weight: 500;
   margin-bottom: 22px;

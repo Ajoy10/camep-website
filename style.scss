@@ -323,6 +323,63 @@ main#first {
     }
 }
 
+#sixth {
+    padding: 40px 14vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .row {
+        justify-content: space-between;
+    }
+
+    .list {
+        gap: 20px;
+    }
+
+    .card {
+        flex: 1;
+        background-color: #EBEEF0;
+        border: 1px solid #DBDBDB;
+        padding: 30px;
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 60%;
+                margin-bottom: 24px;
+            }
+
+            h4 {
+                font-weight: 500;
+                font-size: 1.1em;
+            }
+
+            p {
+                opacity: 0.8;
+                font-size: .85em;
+                line-height: 1.2em;
+                text-align: center;
+            }
+
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+        }
+
+        .bottom {
+            font-weight: 300;
+            font-size: .9em;
+
+        }
+    }
+}
+
 
 h2 {
     font-weight: 500;
