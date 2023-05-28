@@ -184,10 +184,6 @@ main#first #hero-content button#cta:hover {
   justify-content: center;
   text-align: center;
 }
-#fourth h2 {
-  font-weight: 500;
-  margin-bottom: 22px;
-}
 #fourth .row {
   aspect-ratio: 100/39;
 }
@@ -224,4 +220,31 @@ main#first #hero-content button#cta:hover {
 }
 #fourth .banner#finance-banner {
   background-color: #004588;
+}
+
+#fifth {
+  padding: 30px 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#fifth h2 {
+  text-align: center;
+}
+#fifth ul {
+  width: 75%;
+}
+#fifth ul li {
+  background: url("images/bullet-icon.svg") no-repeat left center;
+  list-style-type: none;
+  padding: 0px 0px 1px 36px;
+  vertical-align: middle;
+  margin-bottom: 8px;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 22px;
 }/*# sourceMappingURL=style.css.map */
