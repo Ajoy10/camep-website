@@ -140,10 +140,15 @@ main#first #hero-content button#cta:hover {
   gap: 12px;
 }
 
+.row {
+  display: flex;
+  gap: 36px;
+}
+
 #third {
   display: flex;
   justify-content: space-between;
-  padding: 40px 250px;
+  padding: 40px 18vw;
   gap: 46px;
   background-color: #212E39;
 }
@@ -169,4 +174,54 @@ main#first #hero-content button#cta:hover {
 }
 #third .cards p {
   font-weight: 300;
+}
+
+#fourth {
+  margin-top: 24px;
+  padding: 40px 18vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#fourth h2 {
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+#fourth .row {
+  aspect-ratio: 100/39;
+}
+#fourth .banner {
+  flex: 1;
+  background-color: #CF2138;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  padding-bottom: 60px;
+  height: 100%;
+  border-bottom-left-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+#fourth .banner img {
+  margin-bottom: 24px;
+}
+#fourth .banner h3 {
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+}
+#fourth .banner p {
+  font-weight: 300;
+  font-size: 0.9em;
+}
+#fourth .banner#growth-banner {
+  background-color: #E6EFF6;
+  border: 1px solid #CF2138;
+  color: black;
+}
+#fourth .banner#finance-banner {
+  background-color: #004588;
 }/*# sourceMappingURL=style.css.map */
