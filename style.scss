@@ -15,8 +15,12 @@ html {
 
 body {
     background-color: #F0F4F4;
+    overflow-x: hidden;
 
+}
 
+img:-moz-loading {
+    visibility: hidden;
 }
 
 .button {
