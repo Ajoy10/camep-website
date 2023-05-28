@@ -8,10 +8,29 @@ html {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     background-color: #F0F4F4;
 
+
+}
+
+.button {
+    transition: scale ease-in-out;
+}
+
+.button:active {
+    scale: .95;
+
+}
+
+a.button {
+    color: white;
+    text-decoration: none;
 }
 
 main#first {
@@ -46,7 +65,7 @@ main#first {
         flex-direction: column;
         padding: 40px;
 
-        font-size: 1.5rem;
+        font-size: 1.5em;
 
         h1#hero-heading {
             text-transform: uppercase;
@@ -62,7 +81,7 @@ main#first {
             line-height: 150%;
         }
 
-        button#cta {
+        .button#cta {
             padding: 16px 46px;
             width: max-content;
             font-size: 0.8em;
@@ -90,7 +109,7 @@ main#first {
 
 
 #second {
-    margin: 100px;
+    margin-top: 100px;
 
     display: flex;
     flex-direction: column;
@@ -120,6 +139,7 @@ main#first {
 
     #info-box {
         display: flex;
+        justify-content: center;
         gap: 0px;
         border-radius: 8px;
         border: 1px solid #B7B7B7;
@@ -129,6 +149,7 @@ main#first {
         .cards {
             padding: 16px 40px;
             text-align: center;
+            flex: 1;
 
             &:nth-child(2) {
                 border: 1px solid #B7B7B7;
@@ -171,7 +192,7 @@ main#first {
 
             p {
                 font-weight: 300;
-                font-size: .9;
+                font-size: .9em;
             }
 
         }
@@ -203,6 +224,8 @@ main#first {
         flex: 1;
         width: 100%;
         height: auto;
+        object-fit: cover;
+        border-radius: 12px;
     }
 
     .list {
@@ -254,6 +277,7 @@ main#first {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
 
         padding: 32px;
         padding-bottom: 60px;
@@ -330,11 +354,9 @@ main#first {
     justify-content: center;
     align-items: center;
 
-    .row {
-        justify-content: space-between;
-    }
-
-    .list {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
     }
 
@@ -349,6 +371,7 @@ main#first {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
 
             img {
                 width: 60%;
@@ -415,4 +438,97 @@ main#first {
 h2 {
     font-weight: 500;
     margin-bottom: 22px;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #third,
+    #fourth,
+    #fifth {
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+
+
+    main#first {
+        flex-direction: column;
+        font-size: 0.8em;
+
+        #hero-image {
+            height: 30%;
+
+            img {
+
+                border-right: none;
+                border-bottom: 20px solid #23A5D9;
+            }
+
+            border-right: none;
+
+            border-bottom: 10px solid #ffffff;
+
+        }
+
+        #hero-content {
+            height: 100%;
+            flex: 2;
+            justify-content: flex-start;
+        }
+
+    }
+
+    #second {
+        p.description {
+            width: 90%;
+        }
+
+        #info-box {
+            margin-right: 0px;
+            margin-left: 0px;
+            width: 90%;
+            max-width: 300px;
+
+            flex-direction: column;
+
+            .cards {
+                max-width: unset;
+
+                &:nth-child(2) {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    #third {
+        flex-direction: column;
+
+        #beds-image {
+            flex: none;
+            height: 200px;
+        }
+    }
+
+    #fourth {
+        .row {
+            flex-direction: column;
+
+            .banner {
+                aspect-ratio: 245/326;
+                min-width: 320px;
+                width: 40%;
+                margin: auto;
+            }
+        }
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+
+
 }

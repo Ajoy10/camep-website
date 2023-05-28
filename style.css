@@ -6,8 +6,25 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F0F4F4;
+}
+
+.button {
+  transition: scale ease-in-out;
+}
+
+.button:active {
+  scale: 0.95;
+}
+
+a.button {
+  color: white;
+  text-decoration: none;
 }
 
 main#first {
@@ -35,7 +52,7 @@ main#first #hero-content {
   justify-content: center;
   flex-direction: column;
   padding: 40px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 main#first #hero-content h1#hero-heading {
   text-transform: uppercase;
@@ -48,7 +65,7 @@ main#first #hero-content h1#hero-heading .outline-text {
 main#first #hero-content #hero-text {
   line-height: 150%;
 }
-main#first #hero-content button#cta {
+main#first #hero-content .button#cta {
   padding: 16px 46px;
   width: -moz-max-content;
   width: max-content;
@@ -60,15 +77,15 @@ main#first #hero-content button#cta {
   color: white;
   border: none;
 }
-main#first #hero-content button#cta .icon {
+main#first #hero-content .button#cta .icon {
   margin-left: 12px;
 }
-main#first #hero-content button#cta:hover {
+main#first #hero-content .button#cta:hover {
   background-color: #023d78;
 }
 
 #second {
-  margin: 100px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,6 +108,7 @@ main#first #hero-content button#cta:hover {
 }
 #second #info-box {
   display: flex;
+  justify-content: center;
   gap: 0px;
   border-radius: 8px;
   border: 1px solid #B7B7B7;
@@ -100,6 +118,7 @@ main#first #hero-content button#cta:hover {
 #second #info-box .cards {
   padding: 16px 40px;
   text-align: center;
+  flex: 1;
   max-width: 320px;
 }
 #second #info-box .cards:nth-child(2) {
@@ -131,7 +150,7 @@ main#first #hero-content button#cta:hover {
 }
 #second #info-box .cards p {
   font-weight: 300;
-  font-size: 0.9;
+  font-size: 0.9em;
 }
 
 .list {
@@ -156,6 +175,9 @@ main#first #hero-content button#cta:hover {
   flex: 1;
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
 }
 #third .list {
   flex: 2;
@@ -251,10 +273,9 @@ main#first #hero-content button#cta:hover {
   justify-content: center;
   align-items: center;
 }
-#sixth .row {
-  justify-content: space-between;
-}
-#sixth .list {
+#sixth .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 #sixth .card {
@@ -268,6 +289,7 @@ main#first #hero-content button#cta:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -320,4 +342,68 @@ main#first #hero-content button#cta:hover {
 h2 {
   font-weight: 500;
   margin-bottom: 22px;
+}
+
+@media only screen and (max-width: 1100px) {
+  #third,
+  #fourth,
+  #fifth {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}
+@media only screen and (max-width: 720px) {
+  main#first {
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+  main#first #hero-image {
+    height: 30%;
+    border-right: none;
+    border-bottom: 10px solid #ffffff;
+  }
+  main#first #hero-image img {
+    border-right: none;
+    border-bottom: 20px solid #23A5D9;
+  }
+  main#first #hero-content {
+    height: 100%;
+    flex: 2;
+    justify-content: flex-start;
+  }
+  #second p.description {
+    width: 90%;
+  }
+  #second #info-box {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 90%;
+    max-width: 300px;
+    flex-direction: column;
+  }
+  #second #info-box .cards {
+    max-width: unset;
+  }
+  #second #info-box .cards:nth-child(2) {
+    border: none;
+  }
+  #third {
+    flex-direction: column;
+  }
+  #third #beds-image {
+    flex: none;
+    height: 200px;
+  }
+  #fourth .row {
+    flex-direction: column;
+  }
+  #fourth .row .banner {
+    aspect-ratio: 245/326;
+    min-width: 320px;
+    width: 40%;
+    margin: auto;
+  }
+  #footer {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
