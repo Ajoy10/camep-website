@@ -532,3 +532,35 @@ h2 {
 
 
 }
+
+@media only screen and (min-width: 2000px) {
+    body {
+        font-size: 1vw;
+    }
+
+    #second {
+        #info-box {
+            background: unset;
+            border: unset;
+
+            gap: 30px;
+            width: 65%;
+
+            .cards {
+                background: white;
+
+                &:nth-child(2) {
+                    border: 1px solid #B7B7B7;
+                }
+
+                border: 1px solid #B7B7B7;
+                max-width: unset;
+
+                padding-bottom: 60px;
+
+            }
+
+
+        }
+    }
+}
