@@ -271,6 +271,54 @@ main#first #hero-content .button#cta:hover {
   font-weight: 300;
 }
 
+#contact-form {
+  padding: 30px 18vw;
+  background-color: #212e39;
+  color: white;
+}
+#contact-form h2 {
+  text-align: center;
+}
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+#contact-form .input-group {
+  display: flex;
+  flex-direction: column;
+}
+#contact-form .input-group label {
+  margin: 8px 0px;
+}
+#contact-form .input-group label .required {
+  color: #CF2138;
+}
+#contact-form .input-group input {
+  height: 3em;
+}
+#contact-form .input-group input,
+#contact-form .input-group textarea {
+  background-color: #3b4752;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+#contact-form .button.submit {
+  margin: 14px 0px;
+  background-color: #1897CE;
+  color: white;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+#contact-form .button.submit:hover {
+  background-color: #1d82ad;
+}
+
 #sixth {
   padding: 40px 14vw;
   display: flex;

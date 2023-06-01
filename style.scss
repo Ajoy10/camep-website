@@ -351,6 +351,68 @@ main#first {
     }
 }
 
+#contact-form {
+    padding: 30px 18vw;
+
+    background-color: #212e39;
+    color: white;
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin: 8px 0px;
+
+            .required {
+                color: #CF2138;
+            }
+        }
+
+        input {
+            height: 3em;
+        }
+
+        input,
+        textarea {
+            background-color: #3b4752;
+            border: none;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+
+    }
+
+    .button.submit {
+        margin: 14px 0px;
+        background-color: #1897CE;
+        color: white;
+        border: none;
+        padding: 16px;
+
+        cursor: pointer;
+        font-size: 1.1em;
+
+        &:hover {
+            background-color: #1d82ad;
+
+        }
+    }
+}
+
 #sixth {
     padding: 40px 14vw;
     display: flex;
